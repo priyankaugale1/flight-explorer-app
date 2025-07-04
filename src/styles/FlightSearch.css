@@ -1,0 +1,88 @@
+.flight-search-container {
+  padding: 20px;
+  background-color: #f3f6fb;
+  min-height: calc(100vh - 120px); /* Adjusted for Navbar & Footer */
+}
+
+.flight-search-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+  gap: 10px;
+  background: #eef2fb;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.flight-search-bar input,
+.flight-search-bar select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.flight-search-bar span {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-btn {
+  padding: 8px 16px;
+  background-color: #1f3b73;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background-color: #183061;
+}
+
+.flight-search-results {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Reduce table row height */
+.ant-table-tbody > tr > td {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  font-size: 14px;
+}
+
+/* Optional: make header match visually */
+.ant-table-thead > tr > th {
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
+}
+
+/* Table header styling */
+.ant-table-thead > tr > th {
+  background-color: #1f3b73 !important;
+  color: white !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+  .flight-search-bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .flight-search-bar input,
+  .flight-search-bar select {
+    width: 100%;
+    max-width: 220px;
+  }
+}

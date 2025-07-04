@@ -1,0 +1,53 @@
+.admin-dashboard {
+  padding: 2rem;
+  margin: auto;
+  /* background-color: #f9f9f9; */
+}
+
+.add-flight-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.add-flight-section input {
+  flex: 1 1 180px;
+  min-width: 160px;
+}
+
+/* Responsive Table Scroll */
+.admin-dashboard .ant-table-wrapper {
+  overflow-x: auto;
+}
+
+/* Optional: Style table container */
+.admin-dashboard .ant-table {
+  min-width: 600px;
+  /* Or set to 100% if preferred */
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 1rem;
+  }
+
+   .add-flight-section input {
+    flex: 1 1 37px;
+  }
+}
+
+.ant-table-thead>tr>th {
+  background-color: #1f3b73 !important;
+  color: white !important;
+  text-align: center;
+}
+
+.ant-table-cell {
+  text-align: left;
+}
+
+button.ant-btn-primary {
+  background-color: #1f3b73;
+  border-color: #1f3b73;
+}
