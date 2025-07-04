@@ -29,7 +29,7 @@
 
 @media (max-width: 768px) {
   .admin-dashboard {
-    padding: 1rem;
+    padding: 1rem; 
   }
 
    .add-flight-section input {
