@@ -23,7 +23,7 @@ const Login = () => {
 
     if (!exists) {
       toast.error("User not found. Redirecting to signup...", { theme: "colored" });
-      setTimeout(() => navigate("/signup", { state: { email } }), 1500);
+      setTimeout(() => navigate("/priyankaugale1/signup", { state: { email } }), 1500);
       return;
     }
 
@@ -32,7 +32,7 @@ const Login = () => {
       const user = JSON.parse(localStorage.getItem("user"));
       toast.success("Login successful!", { theme: "colored" });
       setTimeout(() => {
-        navigate(user.role === "admin" ? "/admin" : "/user");
+        navigate(user.role === "admin" ? "/priyankaugale1/admin" : "/priyankaugale1/user");
       }, 1000);
     } else {
       toast.error("Invalid password", { theme: "colored" });
@@ -67,7 +67,7 @@ const Login = () => {
           </button>
           <p className="signup-link">
             Don’t have an account?{' '}
-            <span onClick={() => navigate("/signup")} className="signup-text">
+            <span onClick={() => navigate("/priyankaugale1/signup")} className="signup-text">
               Sign Up
             </span>
           </p>

@@ -202,7 +202,7 @@ const AdminDashboard = () => {
       </Modal>
 
       <div style={{ marginTop: 40, textAlign: "center" }}>
-        <Button style={{ backgroundColor: "#1f3b73", color:'#fff', borderColor:'#1f3b73' }} onClick={() => navigate("/admin/bookings")}>
+        <Button style={{ backgroundColor: "#1f3b73", color:'#fff', borderColor:'#1f3b73' }} onClick={() => navigate("/priyankaugale1/admin/bookings")}>
           View Booked Details
         </Button>
       </div>

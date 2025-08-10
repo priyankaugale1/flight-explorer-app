@@ -46,7 +46,7 @@ const BookedDetails = () => {
         <div className="booked-container">
             <Breadcrumb className="breadcrumb">
                 <Breadcrumb.Item>
-                    <Link to="/admin">Admin Dashboard</Link>
+                    <Link to="/priyankaugale1/admin">Admin Dashboard</Link>
                 </Breadcrumb.Item>
                 <Breadcrumb.Item>Booked Details</Breadcrumb.Item>
             </Breadcrumb>

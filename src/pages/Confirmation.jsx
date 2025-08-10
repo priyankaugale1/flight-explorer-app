@@ -33,7 +33,7 @@ const Confirmation = () => {
     return (
       <div className="confirmation-spinner">
         <h2>No booking found</h2>
-        <button className="back-btn" onClick={() => navigate("/user")}>Back to Search</button>
+        <button className="back-btn" onClick={() => navigate("/priyankaugale1/user")}>Back to Search</button>
       </div>
     );
   }
@@ -58,7 +58,7 @@ const Confirmation = () => {
           <div><strong>Total Paid:</strong> ₹{booking.price}</div>
         </div>
 
-        <button className="back-btn" onClick={() => navigate("/user")}>Search More Flights</button>
+        <button className="back-btn" onClick={() => navigate("/priyankaugale1/user")}>Search More Flights</button>
       </div>
     </div>
   );

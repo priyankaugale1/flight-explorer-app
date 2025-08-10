@@ -17,8 +17,8 @@ const UserDashboard = () => <FlightSearch />;
 
 const PrivateRoute = ({ children, role }) => {
   const { user } = useAuth();
-  if (!user) return <Navigate to="/login" />;
-  if (role && user.role !== role) return <Navigate to="/login" />;
+  if (!user) return <Navigate to="/priyankaugale1/login" />;
+  if (role && user.role !== role) return <Navigate to="/priyankaugale1/login" />;
   return children;
 };
 
@@ -39,15 +39,15 @@ const App = () => {
       <Router>
         <Routes>
           {/* Auth Pages - No Navbar/Footer */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/priyankaugale1/login" element={<Login />} />
+          <Route path="/priyankaugale1/signup" element={<Signup />} />
 
           {/* Protected Pages - With Navbar/Footer */}
           <Route element={<Layout />}>
             <Route path="/" element={<Navigate to="/login" />} />
 
             <Route
-              path="/user"
+              path="/priyankaugale1/user"
               element={
                 <PrivateRoute role="user">
                   <UserDashboard />
@@ -55,7 +55,7 @@ const App = () => {
               }
             />
             <Route
-              path="/admin"
+              path="/priyankaugale1/admin"
               element={
                 <PrivateRoute role="admin">
                   <AdminDashboard />
@@ -63,7 +63,7 @@ const App = () => {
               }
             />
             <Route
-              path="/booking"
+              path="/priyankaugale1/booking"
               element={
                 <PrivateRoute role="user">
                   <Booking />
@@ -71,14 +71,14 @@ const App = () => {
               }
             />
             <Route
-              path="/confirmation"
+              path="/priyankaugale1/confirmation"
               element={
                 <PrivateRoute role="user">
                   <Confirmation />
                 </PrivateRoute>
               }
             />
-            <Route path="/admin/bookings" element={
+            <Route path="/priyankaugale1/admin/bookings" element={
               <PrivateRoute role="admin">
                 <BookedDetails />
               </PrivateRoute>

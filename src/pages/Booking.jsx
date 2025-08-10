@@ -19,7 +19,7 @@ const Booking = () => {
 
 
   useEffect(() => {
-    if (!selectedFlight) navigate("/user");
+    if (!selectedFlight) navigate("/priyankaugale1/user");
     else setPrice(Math.floor(Math.random() * 5000 + 1000));
   }, [selectedFlight, navigate]);
 
@@ -72,7 +72,7 @@ const Booking = () => {
         localStorage.setItem("bookings", JSON.stringify(bookings));
         setPaymentSuccess(true); // show loader briefly
         setTimeout(() => {
-          navigate("/confirmation", { state: { booking: newBooking } });
+          navigate("/priyankaugale1/confirmation", { state: { booking: newBooking } });
         }, 1000); // 1s loader before redirect
       } else {
         toast.error("Payment Failed. Try Again", { theme: "colored" });

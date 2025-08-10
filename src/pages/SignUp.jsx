@@ -41,7 +41,7 @@ const Signup = () => {
     const success = signup({ email, password, role });
     if (success) {
       toast.success("Signup successful! Redirecting to login...", { theme: "colored" });
-      setTimeout(() => navigate("/login"), 2000);
+      setTimeout(() => navigate("/priyankaugale1/login"), 2000);
     } else {
       toast.error("User already exists");
     }
@@ -74,7 +74,7 @@ const Signup = () => {
           </select>
           <button onClick={handleSignup}>Signup</button>
           <p className="login-text">
-            Already have an account? <span onClick={() => navigate("/login")}>Login</span>
+            Already have an account? <span onClick={() => navigate("/priyankaugale1/login")}>Login</span>
           </p>
         </div>
       </div>

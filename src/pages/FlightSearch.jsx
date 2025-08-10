@@ -55,7 +55,7 @@ const FlightSearch = () => {
 
   const handleBook = (flight) => {
     localStorage.setItem("selectedFlight", JSON.stringify(flight));
-    navigate("/booking");
+    navigate("/priyankaugale1/booking");
   };
 
   const columns = [
